@@ -1,0 +1,32 @@
+.question_shown {
+			float: right;
+			display: inline-block;
+			border: solid;
+			width: 15%;
+			padding: 5% 5% 5% 2.5%;
+		}
+		.exercice_box {
+			margin-left: 25%;
+			width: 50%;
+			border: solid;
+			border-radius: 30px;
+			display: inline-block;
+		}
+		.img_exercice {
+			align-self: center;
+		}
+		#enunciado{
+	        font-family:'Roboto Mono', monospace;
+        }
+		#enunciado_secundario{
+			font-family:'Roboto Mono',monospace;
+		}
+		#enunciado_box {
+			padding: 5%;
+		}
+		#form1 {
+			display: block;
+		}
+		#submitbutton, #form2, #submitbutton2 {
+			display: none;
+		}
