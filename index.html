@@ -15,14 +15,29 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 	<title>Workflow: Home</title>
+	<!--Fonte-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"" rel="stylesheet">
+	<style>
+	 h1{
+       font-family:'Roboto Mono', monospace;
+     }
+	 button{
+	   font-family:'Roboto Mono', monospace;
+	 }
+	 li{
+	   font-family:'Roboto Mono',monospace;
+	 }
+	</style>
+	<!--Fonte-->
+	<script src="modonoturno.js" defer></script>
 </head>
 <body>
-	
  <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-6">
 	<!-- NAV -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="nav">
+
 	<div class="container-fluid">
 	<!--	<a class="navbar-brand" href="http://ort.org.br/" target="blank"><img src="assets/img/ort_logo.png" class="logo-nav"></a> -->
 		
@@ -33,16 +48,48 @@
 	</div>
 		
 		<div class="title">
-			<p>Workflow</p>
+			<h1 id="titulo">Workflow</h1>
 		</div>
+
 	<div class="container-fluid">	
+		<div class="d-flex">
+			 <div class="dropdown mr-1">
+			  <button type="button" class="btn btn-secondary dropdown-toggle" id="botao1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			     Resumos
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="resumos" id="menudropdown">
+			      <li class="dropdown-header"><center style="color:white; background-color: #a7a9ab; font-weight: bold;" id="cabecalhodropdown1">Núcleo Comum</center></li>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/fisica.html" style="text-decoration: none"><center>Física</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/biologia.html" style="text-decoration: none"><center>Biologia</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/matematica.html" style="text-decoration: none"><center>Matemática</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/quimica.html" style="text-decoration: none"><center>Química</center></a></button>
+		          <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/portugues.html" style="text-decoration: none"><center>Português</center></a></button>
+		          <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/geografia.html" style="text-decoration: none"><center>Geografia</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/literatura.html" style="text-decoration: none"><center>Literatura</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/sociologia.html" style="text-decoration: none"><center>Sociologia</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/historia.html" style="text-decoration: none"><center>História</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/nc/filosofia.html" style="text-decoration: none"><center>Filosofia</center></a></button>
+				  <li class="dropdown-header"><center style="color:white; background-color: #a7a9ab; font-weight: bold;" id="cabecalhodropdown2">Técnicos</li>
+				  <button class="dropdown-item" type="button"><a href="assets/pags-materias/tec/eletro.html" style="text-decoration: none"><center>Eletrônica</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/tec/mm.html" style="text-decoration: none"><center>Multimídias</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/tec/pr.html" style="text-decoration: none"><center>Programação</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/tec/ep.html" style="text-decoration: none"><center>Empreendedorismo</center></a></button>
+			      <button class="dropdown-item" type="button"><a href="assets/pags-materias/tec/bt.html" style="text-decoration: none"><center>Bioteclonogia</center></a></button>
+			   	  <!--
+		          <li><a><center>Hebraico</center></a></li>
+			      <li><a><center>Inglês</center></a></li>
+			      <li><a><center>Gestão de Negócios</center></a></li>
+			      <li><a><center>Redação</center></a></li>
+			      <li><a><center>História Judaica</center></a></li>-->
+			  </div>
+		</div>
+		<div class="dflex">
+				 <button type="button" class="btn btn-secondary" id="botao2">
+			     <a class="nav-link" href="assets/pag-exercicios/index.html" style="color: white">Exercícios</a>
+			    </button>
+			  </div>
+		</div>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
-			
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="assets/pag-exercicios/index.html" style="color: white">Exercícios</a>
-				</li>
-			</ul>
 		</div>
 	</div>
 	</nav>
@@ -52,55 +99,45 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
 	<div class="home-materias">
-		<div class="nc-title"> 	
-			<div class="jumbotron jumbotron-fluid">
-		  		<div class="container">
-		    	<h1 class="display-4">Núcleo Comum</h1>
-		  		</div>
-			</div>
+	<div class="nc-title"> 	
 		</div>
-		<div class="nc-home-1">
-			<a href="assets/pags-materias/nc/fisica.html"><button type="button" class="btn btn-primary">Física</button></a>
-			<a href="assets/pags-materias/nc/biologia.html"><button type="button" class="btn btn-success">Biologia</button></a>
-			<a href="assets/pags-materias/nc/matematica.html"><button type="button" class="btn btn-danger">Matemática</button></a>
-			<a href="assets/pags-materias/nc/quimica.html"><button type="button" class="btn btn-warning">Química</button></a>
-			<a href="assets/pags-materias/nc/portugues.html"><button type="button" class="btn btn-info">Português</button></a>
+		<div class="nc-home-1>
+		   <!--aqui começa os botões da versão noturna-->
+		 	    <div class="dflex">
+				 <button type="button" class="btn btn-secondary" id="botao3">
+			       <a input value="claro" onclick="noturno(this.value)" class="nav-link" href="javascript:noturno('#343536')" style="color: white"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+                   </svg></a>
+			     </button>
+			    </div>
+		   <!--aqui termina os botões de versão noturna-->
+           <!--Aqui começa "carossel" -->
+		   <div class="carouselslide" data-hide="carousel"> 
+		     <div class="carousel-inner">
+			  <div class="carousel-inner active">
+			   <div class="carousel-item active">
+			    <img class="d-block w-100" src="como_usar_site.jpg" alt="Slide1">
+			   </div>
+			   <div class="carousel-item active">
+			    <img class="d-block w-100" src="como_usar_exercicios.jpg" alt="Slide2">
+			   </div>
+			   <div class="carousel-item active">
+			    <img class="d-block w-100" src="como_usar_resumos.jpg" alt="Slide3">
+			   </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				 <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				 <span class="sr-only">Previous</span>
+			  </a>
+		   </div>
+       <!--Aqui termina o carossel -->
+ </div>
 		</div>
-		<div class="nc-home-2">
-			<a href="assets/pags-materias/nc/geografia.html"><button type="button" class="btn btn-dark">Geografia</button></a>
-			<a href="assets/pags-materias/nc/literatura.html"><button type="button" class="btn btn-dark">Literatura</button></a>
-			<a href="assets/pags-materias/nc/sociologia.html"><button type="button" class="btn btn-dark">Sociologia</button></a>
-			<a href="assets/pags-materias/nc/historia.html"><button type="button" class="btn btn-dark">História</button></a>
-			<a href="assets/pags-materias/nc/filosofia.html"><button type="button" class="btn btn-dark">Filosofia</button></a>
-		
-	<!--
-			<button type="button" class="btn btn-dark">Hebraico</button>
-			<button type="button" class="btn btn-dark">Ingles</button>
-			<button type="button" class="btn btn-dark">Gestao de Negocios</button>
-			<button type="button" class="btn btn-dark">Redacao</button>
-			<button type="button" class="btn btn-dark">Historia Judaica</button>
-			<button type="button" class="btn btn-link">Link</button> -->
-
-		</div>
-
-		<div class="nc-title"> 	
-			<div class="jumbotron jumbotron-fluid">
-		  		<div class="container">
-		    	<h1 class="display-4">Técnicos</h1>
-		  		</div>
-			</div>
-		</div>
-		<div class="tec-home-1">
-
-			<a href="assets/pags-materias/tec/eletro.html"><button type="button" class="btn btn-warning">EL</button></a>
-			<a href="assets/pags-materias/tec/mm.html"><button type="button" class="btn btn-info">MM</button></a>
-			<a href="assets/pags-materias/tec/pr.html"><button type="button" class="btn btn-danger">PR</button></a>
-			<a href="assets/pags-materias/tec/ep.html"><button type="button" class="btn btn-secondary">EP</button></a>
-			<a href="assets/pags-materias/tec/bt.html"><button type="button" class="btn btn-success">BT</button></a>
-		
-		</div>
-	</div>
-	  
+  
 			</div>
 	   </div>
 	</div>
@@ -111,7 +148,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© Compartilhe seu resumo com a gente. Envie para o email: 
+  <div class="footer-copyright text-center py-3" id="copyright">© Compartilhe seu resumo com a gente. Envie para o email: 
     <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank"> ortworkflow@gmail.com</a>
   </div>
   <!-- Copyright -->
